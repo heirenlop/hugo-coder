@@ -35,6 +35,8 @@ avatarURL = "images/avatar.png"
 # 日期格式
 dateFormat = "January 2, 2006"
 since = 2024
+#mermaid语法启用，可以插入图表
+mermaid = true
 # Git Commit in Footer, uncomment the line below to enable it
 commit = "https://github.com/luizdepra/hugo-coder/tree/"
 # Right To Left, shift content direction for languages such as Arabic
@@ -196,16 +198,21 @@ url = "resume/"
 [[languages.zh-cn.menu.main]]
 name = "生活"
 weight = 3
-url = "daily-record/"
-
+url = "生活日常/"
+  
 [[languages.zh-cn.menu.main]]
 name = "工作"
 weight = 4
-url = "work-record/"
+url = "工作记录/"
+
+[[languages.zh-cn.menu.main]]
+name = "杂项"
+weight = 5
+url = "其他记录/"
 
 [[languages.zh-cn.menu.main]]
 name = "联系"
-weight = 5
+weight = 6
 url = "contact/"
 
 #-----------------------------------set EN--------------------------------------
@@ -240,6 +247,13 @@ weight = 4
 url = "work-record/"
 
 [[languages.en.menu.main]]
-name = "contact"
+name = "other"
 weight = 5
+url = "other/"
+
+[[languages.en.menu.main]]
+name = "contact"
+weight = 6
 url = "contact/"
+
+
