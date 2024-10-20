@@ -1,0 +1,5 @@
+# Hugo generated files
+public/
+
+# Hugo cache directory
+resources/_gen/
