@@ -29,7 +29,7 @@ keywords = "blog,developer,personal"
 # info = ["Full Stack DevOps", "Magician"]
 info = [""]
 #240 * 240px
-avatarURL = "images/12.png" 
+avatarURL = "images/avatar.png" 
 # favicon = "images/favicon-32x32.png"
 # gravatar = "13122356672@163.com"
 # 日期格式
