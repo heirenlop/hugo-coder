@@ -140,46 +140,46 @@ category = "categories"
 series = "series"
 tag = "tags"
 author = "authors"
-
+#  fa-brands 表示这是一个品牌图标。
+# fa-linkedin 表示这是 LinkedIn 的图标。
+# fa-2x 表示图标的大小是默认大小的两倍。
 [[params.social]]
 name = "Github"
 icon = "fa-brands fa-github fa-2x"
 weight = 1
-url = "https://github.com/johndoe/"
-
-[[params.social]]
-name = "Gitlab"
-icon = "fa-brands fa-gitlab fa-2x"
-weight = 2
-url = "https://gitlab.com/johndoe/"
+url = "https://github.com/heirenlop"
 
 [[params.social]]
 name = "Twitter"
 icon = "fa-brands fa-x-twitter fa-2x"
-weight = 3
-url = "https://twitter.com/johndoe/"
+weight = 6
+url = "https://x.com/heirenlop"
 
 [[params.social]]
 name = "LinkedIn"
 icon = "fa-brands fa-linkedin fa-2x"
+weight = 3
+url = "https://www.linkedin.com/in/%E4%BD%B3%E6%BD%9E-%E6%9D%8E-30b8961b7/"
+
+[[params.social]]
+name = "WeChat"
+icon = "fa-brands fa-weixin fa-2x"
+weight = 2
+url = "images/wechat.jpg"
+
+[[params.social]]
+name = "QQ"
+icon = "fa-brands fa-qq fa-2x"
 weight = 4
-url = "https://www.linkedin.com/in/johndoe/"
+url = "images/QQ.jpg"
 
 [[params.social]]
-name = "Medium"
-icon = "fa-brands fa-medium fa-2x"
+name = "Zhihu"
+icon = "fa-brands fa-zhihu fa-2x"
 weight = 5
-url = "https://medium.com/@johndoe"
+url = "https://www.zhihu.com/people/heiren-70"
 
-[[params.social]]
-name = "RSS"
-icon = "fa-solid fa-rss fa-2x"
-weight = 6
-url = "https://myhugosite.com/index.xml"
-rel = "alternate"
-type = "application/rss+xml"
-
-
+#-----------------------------------set CN--------------------------------------
 [languages.zh-cn]
 languageName = ":cn:"
 
@@ -196,12 +196,12 @@ url = "resume/"
 [[languages.zh-cn.menu.main]]
 name = "生活"
 weight = 3
-url = "posts/"
+url = "daily-record/"
 
 [[languages.zh-cn.menu.main]]
 name = "工作"
 weight = 4
-url = "projects/"
+url = "work-record/"
 
 [[languages.zh-cn.menu.main]]
 name = "联系"
@@ -230,14 +230,14 @@ weight = 2
 url = "resume/"
 
 [[languages.en.menu.main]]
-name = "Blog"
+name = "daily record"
 weight = 3
-url = "posts/"
+url = "daily-record/"
 
 [[languages.en.menu.main]]
-name = "Projetos"
+name = "work record"
 weight = 4
-url = "projects/"
+url = "work-record/"
 
 [[languages.en.menu.main]]
 name = "contact"
