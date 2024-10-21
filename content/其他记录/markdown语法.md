@@ -6,10 +6,11 @@ draft: false
 
 # 1. 插入
 ## (1). 插入图片
+Markdown 的完整图片语法是 ![没图？](/images/ceshi.png "hugo为了测试")
 
-你可以使用 Markdown 语法插入图片。假设图片存储在 `static/images` 目录下：
-
-![没图？](/images/ceshi.png)
+没图？ 用于源码模式和图片未成功加载提示图片用途
+/images/ceshi.png 是图片地址，可以是本地的也可以是网络图床
+hugo 是图片标题，默认是鼠标悬浮显示
 
 ### 图片说明
 
