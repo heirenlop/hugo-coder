@@ -199,7 +199,15 @@ url = "resume/"
 name = "生活"
 weight = 3
 url = "生活日常/"
-  
+    [[languages.zh-cn.menu.main.children]]
+            name = "音乐"
+            weight = 1
+            url = "生活日常/音乐/"
+          [[languages.zh-cn.menu.main.children]]
+            name = "旅行"
+            weight = 2
+            url = "生活日常/旅行/"
+            
 [[languages.zh-cn.menu.main]]
 name = "工作"
 weight = 4
