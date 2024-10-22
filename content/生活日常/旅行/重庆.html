@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旅行日记-重庆</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .container {
+            display: flex;
+            align-items: flex-start;
+            /* 垂直顶部对齐 */
+            width: 100%;
+            /* 宽度占容器的100% */
+            width: 100%;
+            /* 宽度占容器的100% */
+            max-width: 900px;
+            /* 最大宽度 */
+            margin-bottom: 40px;
+            /* 容器之间的间距 */
+        }
+
+        .image {
+            flex: 2;
+            /* 图片部分占据剩余空间的2/3 */
+            margin-right: 20px;
+            /* 图片与文字右侧间距 */
+            margin-left: 20px;
+            /* 图片与文字左侧间距 */
+        }
+
+        .image img {
+            max-height: 650px;
+            max-width: auto;
+            /*图片自适应容器大小*/
+        }
+
+        .text {
+            flex: 1;
+            /* 文字部分占据剩余空间的1/3 */
+        }
+
+        figure {
+            margin: 0;
+            /* 移除默认的外边距 */
+        }
+
+        figcaption {
+            font-size: 0.8em;
+            /* 描述文字大小 */
+            color: #ffffffaf;
+            /* 描述文字颜色 */
+            margin-top: 5px;
+            /* 描述文字与图片之间的间距 */
+        }
+    </style>
+</head>
+
+<body>
+    <article>
+        <header>
+            <h1>旅行日记-重庆</h1>
+            <p><time datetime="2024-10-20">编辑时间：2024-10-21</time></p>
+            <p>分类: <a href="#">旅游</a></p>
+            <p>标签: <a href="#">重庆</a></p>
+        </header>
+        <section>
+            <h2>引言</h2>
+            <p>2021-07-01---2021-07-05</p>
+            <p>硕士毕业旅行和女朋友一起去的重庆。没有想象中的热，全是阴天，没有风、没太阳、不下雨。</p>
+        </section>
+        <section>
+            <h2>1. 嘉陵江</h2>
+            <p>07-02 <i class="fas fa-cloud"></i></p>
+            <p>酒店在江边，江水看起来很混。</p>
+            <div class="container">
+                <div class="image">
+                    <figure>
+                        <img src="/images/daily-travel/chongqing4.jpg">
+                        <figcaption>嘉陵江</figcaption>
+                    </figure>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>2. 解放碑</h2>
+            <p>07-03 <i class="fas fa-cloud"></i></p>
+            <p>晚上去的解放碑，人很多，热闹。</p>
+            <div class="container">
+                <div class="image">
+                    <figure>
+                        <img src="/images/daily-travel/chongqing2.jpg">
+                        <figcaption>解放碑</figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <p>女朋友网上找的火锅店，在小区里，很好吃也很辣，我汗顺着脸把裤子都滴湿了。</p>
+            <div class="container">
+                <div class="image">
+                    <figure>
+                        <img src="/images/daily-travel/chongqing3.jpg">
+                        <figcaption>火锅</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>3. 洪崖洞+皇冠大扶梯</h2>
+            <p>07-04 <i class="fas fa-cloud"></i></p>
+            <div class="container">
+                <div class="image">
+                    <figure>
+                        <img src="/images/daily-travel/chongqing1.jpg">
+                        <figcaption>皇冠大扶梯</figcaption>
+                    </figure>
+                </div>
+                <div class="text">
+                    <p>第一次坐收费电梯，确实很长，对恐高患者不友好。</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="text">
+                    <p>应该是去重庆拍的最满意的一张照片。</p>
+                </div>
+                <div class="image">
+                    <figure>
+                        <img src="/images/daily-travel/chongqing5.jpg">
+                        <figcaption>洪崖洞</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </article>
+</body>
+
+</html>

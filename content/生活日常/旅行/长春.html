@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,39 +9,51 @@
     <style>
         .container {
             display: flex;
-            align-items: flex-start; /* 垂直顶部对齐 */
-            width: 100%; /* 宽度占容器的100% */
-            max-width: 900px; /* 最大宽度 */
-            margin-bottom: 40px; /* 容器之间的间距 */
+            align-items: flex-start;
+            /* 垂直顶部对齐 */
+            width: 100%;
+            /* 宽度占容器的100% */
+            max-width: 900px;
+            /* 最大宽度 */
+            margin-bottom: 40px;
+            /* 容器之间的间距 */
         }
 
         .image {
-            flex: 2; /* 图片部分占据剩余空间的2/3 */
-            margin-right: 20px; /* 图片与文字之间的间距 */
-            margin-left: 20px; /* 图片与文字之间的间距 */
+            flex: 2;
+            /* 图片部分占据剩余空间的2/3 */
+            margin-right: 20px;
+            /* 图片与文字右侧间距 */
+            margin-left: 20px;
+            /* 图片与文字左侧间距 */
         }
 
         .image img {
-            max-width: 100%; /* 图片自适应容器大小 */
-            height: auto; /* 保持图片的宽高比 */
-            width: auto; /* 自动调整宽度以保持宽高比 */
+            max-height: 650px;
+            max-width: auto;
         }
 
         .text {
-            flex: 1; /* 文字部分占据剩余空间的1/3 */
+            flex: 1;
+            /* 文字部分占据剩余空间的1/3 */
         }
 
         figure {
-            margin: 0; /* 移除默认的外边距 */
+            margin: 0;
+            /* 移除默认的外边距 */
         }
 
         figcaption {
-            font-size: 0.8em; /* 描述文字大小 */
-            color: #ffffffaf; /* 描述文字颜色 */
-            margin-top: 5px; /* 描述文字与图片之间的间距 */
+            font-size: 0.8em;
+            /* 描述文字大小 */
+            color: #ffffffaf;
+            /* 描述文字颜色 */
+            margin-top: 5px;
+            /* 描述文字与图片之间的间距 */
         }
     </style>
 </head>
+
 <body>
     <article>
         <header>
@@ -60,9 +73,9 @@
             <div class="container">
                 <div class="image">
                     <figure>
-                    <img src="/images/daily-travel/changchun1.jpg" alt="伪满皇宫" height="600">
-                    <figcaption>伪满皇宫</figcaption>
-                </figure>
+                        <img src="/images/daily-travel/changchun1.jpg">
+                        <figcaption>伪满皇宫</figcaption>
+                    </figure>
                 </div>
                 <div class="text">
                     <p>从学校开到长春，先去伪满皇宫。伪满皇宫这地方我看不懂，没太大兴趣，逛了逛就出来了。</p>
@@ -75,10 +88,10 @@
             <p>晚上去的南湖公园，本地人挺多，有些路晚上没路灯，挺吓人。</p>
             <div class="container">
                 <div class="image">
-                    <figure>    
-                    <img src="/images/daily-travel/changchun2.jpg">
-                    <figcaption>南湖公园</figcaption>
-                </figure>
+                    <figure>
+                        <img src="/images/daily-travel/changchun2.jpg">
+                        <figcaption>南湖公园</figcaption>
+                    </figure>
                 </div>
             </div>
         </section>
@@ -88,31 +101,31 @@
             <p>绕着湖走了一圈，大概18km吧，回哈尔滨脚底就起泡了，净月潭挺美的，但是给我感觉和宁波的东钱湖没太大区别。</p>
             <div class="container">
                 <div class="image">
-                    <figure>    
-                    <img src="/images/daily-travel/changchun3.jpg">
-                    <figcaption>净月潭</figcaption>
-                </figure>
+                    <figure>
+                        <img src="/images/daily-travel/changchun3.jpg">
+                        <figcaption>净月潭</figcaption>
+                    </figure>
                 </div>
             </div>
             <div class="container">
                 <div class="image">
-                    <figure>    
-                    <img src="/images/daily-travel/changchun4.jpg" >
-                    <figcaption>自拍</figcaption>
-                </figure>
+                    <figure>
+                        <img src="/images/daily-travel/changchun4.jpg">
+                        <figcaption>自拍</figcaption>
+                    </figure>
                 </div>
                 <div class="text">
                     <p>走累了，路边自拍。</p>
                 </div>
             </div>
-            
+
             <div class="container">
-                
+
                 <div class="text">
                     <p>路上遇到一对夫妻，我觉得他们浪漫极了👍👍👍。</p>
                 </div>
                 <div class="image">
-                    <figure>    
+                    <figure>
                         <img src="/images/daily-travel/changchun5.jpg">
                         <figcaption>一对夫妻</figcaption>
                     </figure>
@@ -125,4 +138,5 @@
         </section>
     </article>
 </body>
+
 </html>
