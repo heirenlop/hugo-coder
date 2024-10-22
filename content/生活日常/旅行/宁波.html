@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旅行日记-宁波</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .container {
+            display: flex;
+            /* 垂直顶部对齐 */
+            align-items: flex-start;
+            /* 容器宽度占页面的100% */
+            width: 100%;
+            /* 最大宽度 */
+            max-width: 900px;
+            /* 容器之间的间距 */
+            margin-bottom: 40px;
+        }
+
+        .image {
+            /* 图片部分占据剩余空间的2/3 */
+            flex: 2;
+            /* 图片与文字右侧间距 */
+            margin-right: 20px;
+            /* 图片与文字左侧间距 */
+            margin-left: 20px;
+        }
+
+        .image img {
+            /* 设置图片最大高度 */
+            max-height: 650px;
+            max-width: auto;
+        }
+
+        .text {
+            /* 文字部分占据剩余空间的1/3 */
+            flex: 1;
+        }
+
+        figure {
+            /* 移除默认的外边距 */
+            margin: 0;
+        }
+
+        figcaption {
+            font-size: 0.8em;
+            /* 描述文字大小 */
+            color: #ffffffaf;
+            /* 描述文字颜色 */
+            margin-top: 5px;
+            /* 描述文字与图片之间的间距 */
+        }
+    </style>
+</head>
+
+<body>
+    <article>
+        <header>
+            <h1>旅行日记-宁波</h1>
+            <p><time datetime="2024-10-20">编辑时间：2024-10-21</time></p>
+            <p>分类: <a href="#">旅游</a></p>
+            <p>标签: <a href="#">宁波</a></p>
+        </header>
+        <section>
+            <h2>引言</h2>
+            <p>2024-09-15---2024-09-17</p>
+            <p>宁波离上海不远，但是在上海这么长时间也没去过，趁着中秋节假期过去看看。</p>
+        </section>
+        <section>
+            <h2>1. 市区</h2>
+            <p>09-15---09-16 <i class="fas fa-umbrella"></i></p>
+            <div class="container">
+                <div class="image">
+                    <figure>
+                        <img src="/images/daily-travel/ningbo1.jpg">
+                        <figcaption>地铁2号线</figcaption>
+                    </figure>
+                </div>
+                <div class="text">
+                    <p>在市区扫了两个电动车，随便转了转，宁波人不多，地铁人更少，感觉很适合养老。</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>2. 东钱湖</h2>
+            <p>09-17 <i class="fas fa-sun"></i></p>
+            <p>租了辆自行车，80大洋可以骑一天。</p>
+            <div class="container">
+                <div class="image">
+                    <figure>
+                        <img src="/images/daily-travel/ningbo3.jpg">
+                        <figcaption>捷安特</figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <p>绕着东钱湖骑，骑一半放弃了，不如租个电动车，热的要死。</p>
+            <div class="container">
+                <div class="image">
+                    <figure>
+                        <img src="/images/daily-travel/ningbo2.jpg">
+                        <figcaption>东钱湖</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </article>
+</body>
+
+</html>
