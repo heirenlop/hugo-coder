@@ -111,7 +111,7 @@ git diff 版本号 -- 文件名 #文件的路径写全
 
 # 10. 强制重命名当前分支
 ```python
-git branch -M xxx，xxx（新分支名）
+git branch -M xxx #xxx为新分支名
 ```
 
 # 11. 将远程仓库地址添加到本地仓库
