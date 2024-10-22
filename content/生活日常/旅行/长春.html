@@ -9,14 +9,15 @@
         .container {
             display: flex;
             align-items: flex-start; /* 垂直顶部对齐 */
-            width: 100%; /* 宽度占父元素的100% */
+            width: 100%; /* 宽度占容器的100% */
             max-width: 900px; /* 最大宽度 */
-            margin-bottom: 20px; /* 容器之间的间距 */
+            margin-bottom: 40px; /* 容器之间的间距 */
         }
 
         .image {
             flex: 2; /* 图片部分占据剩余空间的2/3 */
             margin-right: 20px; /* 图片与文字之间的间距 */
+            margin-left: 20px; /* 图片与文字之间的间距 */
         }
 
         .image img {
@@ -28,13 +29,23 @@
         .text {
             flex: 1; /* 文字部分占据剩余空间的1/3 */
         }
+
+        figure {
+            margin: 0; /* 移除默认的外边距 */
+        }
+
+        figcaption {
+            font-size: 0.8em; /* 描述文字大小 */
+            color: #ffffffaf; /* 描述文字颜色 */
+            margin-top: 5px; /* 描述文字与图片之间的间距 */
+        }
     </style>
 </head>
 <body>
     <article>
         <header>
             <h1>旅行日记-长春</h1>
-            <p><time datetime="2024-10-20">2024-10-20</time></p>
+            <p><time datetime="2024-10-20">编辑时间：2024-10-20</time></p>
             <p>分类: <a href="#">旅游</a></p>
             <p>标签: <a href="#">长春</a></p>
         </header>
@@ -48,7 +59,10 @@
             <p>09-23 <i class="fas fa-cloud"></i></p>
             <div class="container">
                 <div class="image">
+                    <figure>
                     <img src="/images/daily-travel/changchun1.jpg" alt="伪满皇宫" height="600">
+                    <figcaption>伪满皇宫</figcaption>
+                </figure>
                 </div>
                 <div class="text">
                     <p>从学校开到长春，先去伪满皇宫。伪满皇宫这地方我看不懂，没太大兴趣，逛了逛就出来了。</p>
@@ -61,7 +75,10 @@
             <p>晚上去的南湖公园，本地人挺多，有些路晚上没路灯，挺吓人。</p>
             <div class="container">
                 <div class="image">
-                    <img src="/images/daily-travel/changchun2.jpg" alt="南湖公园" height="600">
+                    <figure>    
+                    <img src="/images/daily-travel/changchun2.jpg">
+                    <figcaption>南湖公园</figcaption>
+                </figure>
                 </div>
             </div>
         </section>
@@ -71,24 +88,34 @@
             <p>绕着湖走了一圈，大概18km吧，回哈尔滨脚底就起泡了，净月潭挺美的，但是给我感觉和宁波的东钱湖没太大区别。</p>
             <div class="container">
                 <div class="image">
-                    <img src="/images/daily-travel/changchun3.jpg" alt="净月潭1" height="600">
+                    <figure>    
+                    <img src="/images/daily-travel/changchun3.jpg">
+                    <figcaption>净月潭</figcaption>
+                </figure>
                 </div>
             </div>
             <div class="container">
                 <div class="image">
-                    <img src="/images/daily-travel/changchun4.jpg" alt="净月潭2" height="600">
+                    <figure>    
+                    <img src="/images/daily-travel/changchun4.jpg" >
+                    <figcaption>自拍</figcaption>
+                </figure>
                 </div>
                 <div class="text">
-                    <p>路边给自己拍一张。</p>
+                    <p>走累了，路边自拍。</p>
                 </div>
             </div>
             
             <div class="container">
-                <div class="image">
-                    <img src="/images/daily-travel/changchun5.jpg" alt="净月潭3" height="600">
-                </div>
+                
                 <div class="text">
                     <p>路上遇到一对夫妻，我觉得他们浪漫极了👍👍👍。</p>
+                </div>
+                <div class="image">
+                    <figure>    
+                        <img src="/images/daily-travel/changchun5.jpg">
+                        <figcaption>一对夫妻</figcaption>
+                    </figure>
                 </div>
             </div>
         </section>
