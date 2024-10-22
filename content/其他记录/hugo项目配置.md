@@ -3,7 +3,7 @@ title: "hugo项目配置"
 date: 2024-10-21
 draft: false
 public: true
-categories: ["blog"]
+categories: ["hugo"]
 tags: ["hugo"]
 ---
 

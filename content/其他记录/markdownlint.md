@@ -2,6 +2,9 @@
 title: "markdwonlint的json修改"
 date: 2024-10-21
 draft: false
+public: true
+categories: ["markdown"]
+tags: ["lint"]
 ---
 
 1. 取消html的标签报警告问题
