@@ -29,7 +29,7 @@ keywords = "blog,developer,personal"
 # info = ["Full Stack DevOps", "Magician"]
 info = [""]
 #240 * 240px
-avatarURL = "images/avatar.png" 
+avatarURL = "images/avatar.png"
 # favicon = "images/favicon-32x32.png"
 # gravatar = "13122356672@163.com"
 # 日期格式
@@ -145,6 +145,8 @@ author = "authors"
 #  fa-brands 表示这是一个品牌图标。
 # fa-linkedin 表示这是 LinkedIn 的图标。
 # fa-2x 表示图标的大小是默认大小的两倍。
+#-----------------------------------set social icon--------------------------------------
+
 [[params.social]]
 name = "Github"
 icon = "fa-brands fa-github fa-2x"
@@ -181,7 +183,7 @@ icon = "fa-brands fa-zhihu fa-2x"
 weight = 5
 url = "https://www.zhihu.com/people/heiren-70"
 
-#-----------------------------------set CN--------------------------------------
+#-----------------------------------set menu--------------------------------------
 [languages.zh-cn]
 languageName = ":cn:"
 
@@ -199,15 +201,15 @@ url = "resume/"
 name = "生活"
 weight = 3
 url = "生活日常/"
-    [[languages.zh-cn.menu.main.children]]
-            name = "音乐"
-            weight = 1
-            url = "生活日常/音乐/"
-          [[languages.zh-cn.menu.main.children]]
-            name = "旅行"
-            weight = 2
-            url = "生活日常/旅行/"
-            
+[[languages.zh-cn.menu.main.children]]
+name = "音乐"
+weight = 1
+url = "生活日常/音乐/"
+[[languages.zh-cn.menu.main.children]]
+name = "旅行"
+weight = 2
+url = "生活日常/旅行/"
+
 [[languages.zh-cn.menu.main]]
 name = "工作"
 weight = 4
@@ -264,4 +266,7 @@ name = "contact"
 weight = 6
 url = "contact/"
 
-
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
