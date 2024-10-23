@@ -9,13 +9,13 @@ tags: ["语法"]
 
 # 1. css
 
-**1.1 注释**
+## 1.1 注释
 
 ```css
 /* xxxx */
 ```
 
-**1.2 新建类选择器**
+## 1.2 新建类选择器
 
 (1) 如新建类选择器.third-class，可以在标签内选择class="third-class"
 
@@ -30,7 +30,7 @@ hr{
 }
 ```
 
-**1.3 设置类选择器**
+## 1.3 设置类选择器
 
 (1) 以写过的类选择器为例
 
@@ -76,15 +76,29 @@ hr {
     margin: 20px 0; 
   }
 ```
+## 1.4 css样式配置
+
+新增styles.css文件，路径一般为static/assets/css/路径下，可通过：
+```html
+<head>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+```
+引入后，在html中即可使用。
+
+## 1.5 css示例
+
+可参考styles.css文件：[完整示例](../../static/assets/css/styles.css)
+
 # 2. html
 
-**2.1 注释**
+## 2.1 注释
 
 ```html
 <!-- xxx -->
 ```
 
-**2.2 标签**
+## 2.2 标签
 ```html
 (1) 基本结构标签
 <!DOCTYPE html>：声明文档类型，告诉浏览器这是一个HTML5文档。
@@ -138,46 +152,6 @@ hr {
 <main>：文档的主要内容。
 ```
 
-以下为标签用法示例：
+## 2.3 html示例
 
-```html
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>示例页面</title>
-</head>
-<body>
-  <header>
-    <h1>欢迎来到我的网站</h1>
-    <nav>
-      <ul>
-        <li><a href="#home">首页</a></li>
-        <li><a href="#about">关于我们</a></li>
-        <li><a href="#contact">联系我们</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section>
-      <h2>介绍</h2>
-      <p>这是一个示例段落。</p>
-      <img src="example.jpg" alt="示例图片">
-    </section>
-
-    <article>
-      <h2>最新文章</h2>
-      <p>这是最新文章的内容。</p>
-    </article>
-  </main>
-
-  <footer>
-    <p>&copy; 2023 我的网站</p>
-  </footer>
-</body>
-</html>
-```html
-
-具体页面见html和css示例页面。
+可参考哈尔滨.md、宁波.md等中html部分：[完整示例](../生活日常/旅行/哈尔滨.md)
