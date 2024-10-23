@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    /* 垂直顶部对齐 */
+    align-items: flex-start;
+    /* 容器宽度占页面的100% */
+    width: 100%;
+    /* 最大宽度 */
+    max-width: 900px;
+    /* 容器之间的间距 */
+    margin-bottom: 40px;
+}
+
+.image {
+    /* 图片部分占据剩余空间的2/3 */
+    flex: 2;
+    /* 图片与文字右侧间距 */
+    margin-right: 20px;
+    /* 图片与文字左侧间距 */
+    margin-left: 20px;
+}
+
+.image img {
+    /* 设置图片最大高度 */
+    max-height: 650px;
+    max-width: auto;
+}
+
+.text {
+    /* 文字部分占据剩余空间的1/3 */
+    flex: 1;
+}
+
+figure {
+    /* 移除默认的外边距 */
+    margin: 0;
+}
+
+figcaption {
+    font-size: 0.8em;
+    /* 描述文字大小 */
+    color: #ffffffaf;
+    /* 描述文字颜色 */
+    margin-top: 5px;
+    /* 描述文字与图片之间的间距 */
+}
