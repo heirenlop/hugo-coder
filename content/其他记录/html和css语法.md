@@ -118,6 +118,10 @@ hr {
 属性：href（目标URL）、target（目标窗口，如 _blank）。
 <img>：图像标签，用于插入图片。
 属性：src（图片路径）、alt（替代文本）。
+
+示例：
+    <img src="/images/daily-travel/chongqing1.jpg" alt="重庆旅行照片">
+
 (4) 列表
 <ul>：无序列表。
 <ol>：有序列表。
@@ -139,6 +143,12 @@ hr {
 (7) 多媒体
 <video>：视频标签。
 属性：src（视频路径）、controls（显示播放控件）。
+
+示例：
+<video width="640" height="360" controls>
+      <source src="/videos/daily-travel/huache.mp4" type="video/mp4">
+</video>
+
 <audio>：音频标签。
 属性：src（音频路径）、controls（显示播放控件）。
 (8) 其他常用标签
