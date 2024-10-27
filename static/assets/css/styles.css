@@ -8,6 +8,13 @@
     max-width: 900px;
     /* 容器之间的间距 */
     margin-bottom: 40px;
+    /*内容居中*/
+    /* text-align: center; */
+}
+
+.container video {
+    display: block; /* 视频块级元素，确保居中 */
+    margin: 0 auto; /* 左右自动居中 */
 }
 
 .image {
