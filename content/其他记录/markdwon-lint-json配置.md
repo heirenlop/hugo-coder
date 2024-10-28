@@ -1,5 +1,5 @@
 ---
-title: "markdwonlint的json修改"
+title: "markdwon-lint-json配置"
 date: 2024-10-21
 draft: false
 public: true
