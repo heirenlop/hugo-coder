@@ -1,212 +1,218 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
-<style>
-  /* html和css的注释风格不一样 */
-  /* 以下内容都叫css样式 */
-  .summary {
-    font-size: 30px;
-    font-family: sans-serif;
-  }
-  .first-class {
-    font-size: 24px;
-    font-family: sans-serif;
-    margin-left: 30px;
-  }
-  .second-class {
-    font-size: 20px;
-    margin-left: 40px;
-    font-family: sans-serif;
-  }
-  .third-class {
-    /* 设置字体大小 */
-    font-size: 18px;
-    /* 设置字体颜色 */
-    /* color: darkblue; */
-    /* 设置字体斜体 */
-    font-style: italic;
-    /* 设置行缩进 */
-    margin-left: 50px;
-    font-family: sans-serif;
-    /* 字体设置下划线 */
-    /* text-decoration: underline; */
-    /* 设置字体格式 */
-    /* font-family: '宋体', 'Microsoft YaHei' */
-  }
-  .foured-class {
-    /* 设置字体大小 */
-    font-size: 16px;
-    /* 设置字体颜色 */
-    /* color: darkblue; */
-    /* 设置字体斜体 */
-    font-style: italic;
-    /* 设置行缩进 */
-    margin-left: 60px;
-    font-family: sans-serif;
-    /* 字体设置下划线 */
-    /* text-decoration: underline; */
-    /* 设置字体格式 */
-    /* font-family: '宋体', 'Microsoft YaHei' */
-  }
+  <style>
+    /* html和css的注释风格不一样 */
+    /* 以下内容都叫css样式 */
+    .summary {
+      font-size: 30px;
+      font-family: sans-serif;
+    }
 
-   /* 独立标签设置下划线样式 */
-  .underline {
-    text-decoration: underline;
-  }
+    .first-class {
+      font-size: 24px;
+      font-family: sans-serif;
+      margin-left: 30px;
+    }
 
-  .summary icon {
-  /* 调整图标与文本之间的间距 */
-  margin-right: 8px; 
-  /* 设置图标的颜色 */
-  color: #ff7700; 
-}
-  
-  /* 设置分割线标签 */
-  hr {
-    border: none;
-    /* 分割线粗细 */
-    height: 1px;
-    /* 分割线颜色 */
-    background-color: #ccc;
-    /* 分割线上下边距为20px */
-    margin: 20px 0; 
-  }
+    .second-class {
+      font-size: 20px;
+      margin-left: 40px;
+      font-family: sans-serif;
+    }
 
-</style>
+    .third-class {
+      /* 设置字体大小 */
+      font-size: 18px;
+      /* 设置字体颜色 */
+      /* color: darkblue; */
+      /* 设置字体斜体 */
+      font-style: italic;
+      /* 设置行缩进 */
+      margin-left: 50px;
+      font-family: sans-serif;
+      /* 字体设置下划线 */
+      /* text-decoration: underline; */
+      /* 设置字体格式 */
+      /* font-family: '宋体', 'Microsoft YaHei' */
+    }
+
+    .foured-class {
+      /* 设置字体大小 */
+      font-size: 16px;
+      /* 设置字体颜色 */
+      /* color: darkblue; */
+      /* 设置字体斜体 */
+      font-style: italic;
+      /* 设置行缩进 */
+      margin-left: 60px;
+      font-family: sans-serif;
+      /* 字体设置下划线 */
+      /* text-decoration: underline; */
+      /* 设置字体格式 */
+      /* font-family: '宋体', 'Microsoft YaHei' */
+    }
+
+    /* 独立标签设置下划线样式 */
+    .underline {
+      text-decoration: underline;
+    }
+
+    .summary icon {
+      /* 调整图标与文本之间的间距 */
+      margin-right: 8px;
+      /* 设置图标的颜色 */
+      color: #ff7700;
+    }
+
+    /* 设置分割线标签 */
+    hr {
+      border: none;
+      /* 分割线粗细 */
+      height: 1px;
+      /* 分割线颜色 */
+      background-color: #ccc;
+      /* 分割线上下边距为20px */
+      margin: 20px 0;
+    }
+  </style>
 </head>
 <!-- 以下内容都叫html -->
+
 <body class="vscode-body vscode-light">
-<!-- <details>标签用来创建可折叠元素，搭配summary标签，可以折叠内容，通过点击summary标签来展开或折叠内容。
+  <!-- <details>标签用来创建可折叠元素，搭配summary标签，可以折叠内容，通过点击summary标签来展开或折叠内容。
   <details>
     <summary>这是一个标题</summary>
     <p>这是一个段落</p>
   </details>-->
-<details>
-  <summary class="summary"><icon class="fas fa-graduation-cap"></icon>教育经历</summary>
-   <!-- ul标签一般用来创建无需的列表  -->
-  <ul>
-      <ul>
-        <li class="first-class"><span class="underline"><strong>博士在读</strong></span>
-          <ul>
-            <li class="second-class">2024 - 至今 · 哈尔滨工业大学 · 机械工程</li>
-            <li class="third-class">研究方向: SLAM</li>
-          </ul>
-        </li>
-        <li class="first-class"><span class="underline"><strong>硕士</strong></span>
-          <ul>
-            <li class="second-class">2019 - 2021 · 哈尔滨工业大学 · 机械工程</li>
-            <li class="third-class">研究方向: 崎岖地形下SLAM中特征提取与地图构建</li>
-          </ul>
-        </li>
-        <li class="first-class"><span class="underline"><strong>学士</strong></span>
-          <ul>
-            <li class="second-class">2013 - 2017 · 上海师范大学 · 汽车服务工程</li>
-          </ul>
-        </li>
-      </ul>
-  </ul>
-</details>
+  <details>
+    <summary class="summary">
+      <icon class="fas fa-graduation-cap"></icon>教育经历
+    </summary>
+    <ul>
+      <li class="first-class"><span class="underline"><strong>博士在读</strong></span>
+        <ul>
+          <li class="second-class">2024 - 至今 · 哈尔滨工业大学 · 机械工程</li>
+          <li class="third-class">研究方向: SLAM</li>
+        </ul>
+      </li>
+      <li class="first-class"><span class="underline"><strong>硕士</strong></span>
+        <ul>
+          <li class="second-class">2019 - 2021 · 哈尔滨工业大学 · 机械工程</li>
+          <li class="third-class">研究方向: 崎岖地形下SLAM中特征提取与地图构建</li>
+        </ul>
+      </li>
+      <li class="first-class"><span class="underline"><strong>学士</strong></span>
+        <ul>
+          <li class="second-class">2013 - 2017 · 上海师范大学 · 汽车服务工程</li>
+        </ul>
+      </li>
+    </ul>
+  </details>
 
-<hr>
+  <hr>
 
-<details>
-  <summary class="summary"><icon class="fas fa-briefcase"></icon> 工作经历</summary>
-  <ul>
+  <details>
+    <summary class="summary">
+      <icon class="fas fa-briefcase"></icon> 工作经历
+    </summary>
     <ul>
       <li class="first-class"><span class="underline"><strong>算法工程师</strong></span>
         <ul>
-          <li class="second-class">2021 - 2024 · 上汽研发总院 · 定位算法组</li>
-          <li class="third-class"> 项目
+          <li class="second-class">2021 - 2024 · 上汽研发总院 · 定位算法组
             <details>
               <summary>记忆行车系统中静态要素提取</summary>
-              <li class="foured-class">参与时间：2023 - 2024</li>
-              <li class="foured-class">项目概述：对输入的提取后的语义分割结果(包括斑马线、停止线) 做感知、跟踪、融合，并输出给下游建图端
-              </li>
-              <li class="foured-class">负责情况：开发、测试、维护</li>
-            </details>
-
-            <details>
-              <summary>记忆泊车系统中静态要素提取</summary>
-              <li class="foured-class">参与时间：2022 - 2023</li>
-                <li class="foured-class">项目概述：对输入的未提取的语义分割结果(包括车道线、斑马线、地面箭头)做感知、跟踪、融合，并输出给下
-                游建图端</li>
-                <li class="foured-class">负责情况：开发、测试、维护</li>
-            </details>
-
-            <details>
-              <summary>记忆泊车系统中地图引擎</summary>
-              <li class="foured-class">参与时间：2022</li>
-                <li class="foured-class">项目概述：利用哈希表与共享内存构建泊车状态机，写入拓扑地图数据，并输出给下游规控端</li>
-                  <li class="foured-class">负责情况：开发、测试、维护</li>
-            </details>
-
-            <details>
-              <summary>毫米波雷达高速指示牌提取的开发测试</summary>
-              <li class="foured-class">参与时间：2021 - 2022</li>
-                <li class="foured-class">项目概述：对输入的毫米波雷达点云做感知、跟踪、融合，结果与高精地图匹配，并以此作为纵向约束，供车道
-                级定位使用</li>
-                <li class="foured-class">负责情况：开发、测试</li>
-            </details>
-            
+          <li class="foured-class">参与时间：2023 - 2024</li>
+          <li class="foured-class">项目概述：对输入的提取后的语义分割结果(包括斑马线、停止线) 做感知、跟踪、融合，并输出给下游建图端
           </li>
-        </ul>
-      </li>
-      
-      <li class="first-class"><span class="underline"><strong>实习生</strong></span>
-        <ul>
-          <li class="second-class">2016 · 德国埃尔福特手工业协会</li>
-        </ul>
-      </li>
-      
-    </ul>
-</ul>
-</details>
+          <li class="foured-class">负责情况：开发、测试、维护</li>
+  </details>
 
+  <details>
+    <summary>记忆泊车系统中静态要素提取</summary>
+    <li class="foured-class">参与时间：2022 - 2023</li>
+    <li class="foured-class">项目概述：对输入的未提取的语义分割结果(包括车道线、斑马线、地面箭头)做感知、跟踪、融合，并输出给下
+      游建图端</li>
+    <li class="foured-class">负责情况：开发、测试、维护</li>
+  </details>
 
-<hr>
+  <details>
+    <summary>记忆泊车系统中地图引擎</summary>
+    <li class="foured-class">参与时间：2022</li>
+    <li class="foured-class">项目概述：利用哈希表与共享内存构建泊车状态机，写入拓扑地图数据，并输出给下游规控端</li>
+    <li class="foured-class">负责情况：开发、测试、维护</li>
+  </details>
 
+  <details>
+    <summary>毫米波雷达高速指示牌提取</summary>
+    <li class="foured-class">参与时间：2021 - 2022</li>
+    <li class="foured-class">项目概述：对输入的毫米波雷达点云做感知、跟踪、融合，结果与高精地图匹配，并以此作为纵向约束，供车道
+      级定位使用</li>
+    <li class="foured-class">负责情况：开发、测试</li>
+  </details>
 
-<details>
-  <summary class="summary"><icon class="fas fa-cog"></icon> 技能</summary>
-  <ul>
-    <ul>
-      <li class="first-class"><span class="underline"><strong>编程</strong></span>
-        <ul>
-          <li class="second-class">C++</li>
-          <li class="second-class">html/css</li>
-          <li class="second-class">markdown</li>
-          <li class="second-class">Python</li>
-        </ul>
-      </li>
-      <li class="first-class"><span class="underline"><strong>其他</strong></span>
-        <ul>
-          <li class="second-class">Git</li>
-          <li class="second-class">Linux</li>
-          <li class="second-class">ROS</li>
-          <li class="second-class">LaTex</li>
-        </ul>
-      </li>
-      <li class="first-class"><span class="underline"><strong>外语</strong></span>
-        <ul>
-          <li class="second-class">英语6级</li>
-          <li class="second-class">德语B1</li>
-        </ul>
-      </li>
-    </ul>
+  </li>
   </ul>
-</details>
+  </li>
+
+  <li class="first-class"><span class="underline"><strong>实习生</strong></span>
+    <ul>
+      <li class="second-class">2016 · 德国埃尔福特手工业协会</li>
+    </ul>
+  </li>
+
+  </ul>
+  </details>
+
+
   <hr>
 
-<details>
-  <summary class="summary"><icon class="fas fa-book"></icon> 文章</summary>
-  <ul>
-    <ul>
-      <li class="first-class"><span class="underline"><strong>todo</strong></span>
-          <li class="second-class">todo</li>
-      </li>
+
+  <details>
+    <summary class="summary">
+      <icon class="fas fa-cog"></icon> 技能
+    </summary>
+      <ul>
+        <li class="first-class"><span class="underline"><strong>编程</strong></span>
+          <ul>
+            <li class="second-class">C++</li>
+            <li class="second-class">Python</li>
+            <li class="second-class">html/css/JavaScript</li>
+          </ul>
+        </li>
+        <li class="first-class"><span class="underline"><strong>其他</strong></span>
+          <ul>
+            <li class="second-class">Git</li>
+            <li class="second-class">Linux</li>
+            <li class="second-class">ROS</li>
+            <li class="second-class">LaTex</li>
+            <li class="second-class">markdown</li>
+          </ul>
+        </li>
+        <li class="first-class"><span class="underline"><strong>外语</strong></span>
+          <ul>
+            <li class="second-class">英语6级</li>
+            <li class="second-class">德语B1</li>
+          </ul>
+        </li>
     </ul>
-  </ul>
-</details>
+  </details>
+  <hr>
+
+  <details>
+    <summary class="summary">
+      <icon class="fas fa-book"></icon> 文章
+    </summary>
+    <ul>
+      <ul>
+        <li class="first-class"><span class="underline"><strong>todo</strong></span>
+        <li class="second-class">todo</li>
+        </li>
+      </ul>
+    </ul>
+  </details>
 
 </body>
+
 </html>
