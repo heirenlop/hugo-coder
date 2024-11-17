@@ -209,10 +209,6 @@ url = "生活日常/音乐/"
 name = "旅行"
 weight = 2
 url = "生活日常/旅行/"
-[[languages.zh-cn.menu.main.children]]
-name = "日常"
-weight = 3
-url = "生活日常/日常/"
 
 [[languages.zh-cn.menu.main]]
 name = "工作"
@@ -271,6 +267,6 @@ weight = 6
 url = "contact/"
 # 添加可在md文件中插入html标签配置
 [markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
