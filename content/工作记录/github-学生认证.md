@@ -18,6 +18,6 @@ Student Developer Pack包含的有用的：github copilot/jetbrains/teminus
 github copilot认证攻略：
 https://www.xiaohongshu.com/explore/65d9412c000000000b023c34?xsec_token=ABM3dsrlfDQtTNYZ7iqRQF8iTWPGpCei8Q7mfw8ddTvuQ=&xsec_source=pc_user&m_source=mengfanwetab
 
-jetbrasin认证攻略：略
+jetbrasin认证攻略：hit邮箱无法认证
 
 terminus认证攻略：略
