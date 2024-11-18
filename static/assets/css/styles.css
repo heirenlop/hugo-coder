@@ -12,9 +12,28 @@
     /* text-align: center; */
 }
 
+/* 确保视频在网页端和手机端都能良好适配 */
 .container video {
-    display: block; /* 视频块级元素，确保居中 */
-    margin: 0 auto; /* 左右自动居中 */
+    /* 视频块级元素，确保居中 */
+    display: block;
+    /* 视频宽度占满容器 */
+    width: 100%;
+    /* 高度自动调整 */
+    height: auto;
+    /* 设置最大宽度，防止在大屏幕上过大 */
+    max-width: 640px;
+    /* 左右自动居中 */
+    margin: 0 auto;
+}
+
+/* 针对手机端的样式，即当屏幕宽度小于或等于600px时，应用特定的样式 */
+@media (max-width: 600px) {
+    .container video {
+        width: 100%;
+        /* 视频宽度占满容器 */
+        height: auto;
+        /* 高度自动调整 */
+    }
 }
 
 .image {
@@ -29,7 +48,7 @@
 .image img {
     /* 设置图片最大高度 */
     max-height: 650px;
-    max-width: auto;
+    max-width: 100%;
 }
 
 .text {
