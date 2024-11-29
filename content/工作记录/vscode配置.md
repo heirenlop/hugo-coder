@@ -23,7 +23,7 @@ Windows+VScode配置与使用git，超详细教程，赶紧收藏吧_vscode git-
 
 ## 1.ssh
 
-(1) ssh到ubuntu
+(1) ssh到ubuntu，以及ubuntu需要的设置
 https://blog.csdn.net/zsyyugong/article/details/134438071
 
 ## 2.git
