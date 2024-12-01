@@ -20,4 +20,4 @@ https://www.xiaohongshu.com/explore/65d9412c000000000b023c34?xsec_token=ABM3dsrl
 
 jetbrasin认证攻略：hit邮箱无法认证
 
-terminus认证攻略：略
+terminus认证攻略：直接登录github账号即可
