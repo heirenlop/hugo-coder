@@ -15,9 +15,42 @@ draft: false
 
 (4) 同步
 
-## 2. Windows下配置vscode和git
+## 2. Windows下配置vscode的git
 
 https://blog.csdn.net/czjl6886/article/details/122129576
+
+## 3. linux下配置vscode的git
+
+(1) 安装git
+```python
+sudo apt update
+sudo apt install git
+```
+(2) 验证
+```python
+git --version
+```
+(3) 配置github账户
+```python
+git config --global user.name "Your Name"
+git config --global user.email "youremail@example.com"
+```
+(4) 生成SSH密钥，如果有密钥直接复制过来就行，没有的话如下生成
+```python
+ssh-keygen -t rsa -b 4096 -C "youremail@example.com"
+```
+(5) 查看密钥内容
+```python
+cat ~/.ssh/id_rsa.pub
+```
+(6) github网页设置密钥
+登录到 GitHub，然后进入 Settings > SSH and GPG keys 页面，点击 New SSH key。
+粘贴复制的公钥，并为它取个名字，然后保存。
+(7) 测试SSH链接
+```python
+ssh -T git@github.com
+```
+如果成功，会显示类似于 Hi username! You've successfully authenticated, but GitHub does not provide shell access. 的消息。
 
 # 二：插件相关 #
 
