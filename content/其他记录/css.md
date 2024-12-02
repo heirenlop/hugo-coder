@@ -1,5 +1,5 @@
 ---
-title: "css-语法"
+title: "css"
 date: 2024-10-22
 draft: false
 public: true

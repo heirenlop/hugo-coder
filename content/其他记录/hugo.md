@@ -1,5 +1,5 @@
 ---
-title: "hugo-项目配置"
+title: "hugo"
 date: 2024-10-21
 draft: false
 public: true

@@ -1,5 +1,5 @@
 ---
-title: "markdwon-语法"
+title: "markdwon"
 date: 2024-10-20
 draft: false
 public: true
@@ -138,3 +138,20 @@ def hello_world():
 :tent:
 
 emoji表格：https://gist.github.com/rxaviers/7360908
+
+# 7. 设置
+
+## 1. markdownlint-json配置
+  取消html的标签报警告问题
+  在markdownlint:config中设置setting.json的markdownlint.config。
+   ```python
+    "markdownlint.config": {
+        "default": true,
+        "MD033": {
+          "allowed_elements": [ "font", "li", "table", "tr", "td" ,"ul","strong","summary","details"]
+        }
+    }
+    ```
+  需要什么html的标签取消警告，就把标签名放到MDO33中。
+
+

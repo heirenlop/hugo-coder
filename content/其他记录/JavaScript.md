@@ -1,5 +1,5 @@
 ---
-title: "JavaScript-语法"
+title: "JavaScript"
 date: 2024-10-25
 draft: false
 public: true

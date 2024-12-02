@@ -1,5 +1,5 @@
 ---
-title: "html-语法"
+title: "html"
 date: 2024-10-22
 draft: false
 public: true
