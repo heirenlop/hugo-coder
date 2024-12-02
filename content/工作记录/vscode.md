@@ -15,11 +15,19 @@ draft: false
 
 (4) 同步
 
-## 2. Windows下配置vscode的git
+# 二：插件相关 #
+
+## 1.ssh
+
+(1) ssh到ubuntu，以及ubuntu需要的设置
+https://blog.csdn.net/zsyyugong/article/details/134438071
+
+
+## 2. Git->Windiows
 
 https://blog.csdn.net/czjl6886/article/details/122129576
 
-## 3. linux下配置vscode的git
+## 3. Git->Linux
 
 (1) 安装git
 ```python
@@ -51,14 +59,3 @@ cat ~/.ssh/id_rsa.pub
 ssh -T git@github.com
 ```
 如果成功，会显示类似于 Hi username! You've successfully authenticated, but GitHub does not provide shell access. 的消息。
-
-# 二：插件相关 #
-
-## 1.ssh
-
-(1) ssh到ubuntu，以及ubuntu需要的设置
-https://blog.csdn.net/zsyyugong/article/details/134438071
-
-## 2.git
-
-https://blog.csdn.net/czjl6886/article/details/122129576
