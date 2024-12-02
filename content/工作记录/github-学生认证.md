@@ -1,5 +1,5 @@
 ---
-title: "github-学生认证"
+title: "Github-学生认证"
 date: 2024-10-28
 draft: false
 public: true

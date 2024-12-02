@@ -1,5 +1,5 @@
 ---
-title: "Git常用命令"
+title: "Git"
 date: 2024-10-21
 draft: false
 ---
