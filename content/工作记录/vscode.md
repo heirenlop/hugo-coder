@@ -17,7 +17,7 @@ draft: false
 
 ## 2. Windows下配置vscode和git
 
-Windows+VScode配置与使用git，超详细教程，赶紧收藏吧_vscode git-CSDN博客
+https://blog.csdn.net/czjl6886/article/details/122129576
 
 # 二：插件相关 #
 
