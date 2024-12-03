@@ -114,7 +114,7 @@ docker info
 
 ## 方法1. 科学上网
 
-略
+挂梯子+开tun模式都不好使，还是用方法2找加速源吧。
 
 ## 方法2. 使用国内docker的镜像
 
@@ -133,6 +133,21 @@ sudo tee /etc/docker/daemon.json <<-'EOF'
 EOF
 ```
 
+----------------
+2024-12-03更新
+可用镜像源：
+```bash
+"https://hub.geekery.cn",
+"https://hub.littlediary.cn",
+"https://docker.rainbond.cc",
+"https://docker.unsee.tech",
+"https://docker.m.daocloud.io",
+"https://hub.crdz.gq",
+"https://docker.nastool.de"
+```
+-----------------
+
+
 (2) 重启 Docker 服务
 
 ```bash
@@ -147,7 +162,7 @@ sudo docker run hello-world
 ```
 
 (4) 参考
- https://gist.github.com/y0ngb1n/7e8f16af3242c7815e7ca2f0833d3ea6
+https://www.coderjia.cn/archives/dba3f94c-a021-468a-8ac6-e840f85867ea
 
  # 3. 修改镜像存储路径
 
@@ -165,19 +180,6 @@ sudo vim /etc/docker/daemon.json  # 新建配置文件，在其中输入以下�
 "registry-mirrors": ["http://hub-mirror.c.163.com"]  # 配置国内源[可选]
 }
 ```
-----------------
-2024-12-03更新
-可用镜像源：
-```bash
-"https://hub.geekery.cn",
-"https://hub.littlediary.cn",
-"https://docker.rainbond.cc",
-"https://docker.unsee.tech",
-"https://docker.m.daocloud.io",
-"https://hub.crdz.gq",
-"https://docker.nastool.de"
-```
------------------
 
 (3) 将原文件拷贝到新目录下
 ```bash
@@ -197,4 +199,4 @@ rm -rf /var/lib/docker
 ```
 
 (5) 参考
-https://www.coderjia.cn/archives/dba3f94c-a021-468a-8ac6-e840f85867ea
+https://blog.csdn.net/weixin_43145427/article/details/123770971
