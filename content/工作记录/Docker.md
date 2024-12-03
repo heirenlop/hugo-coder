@@ -118,33 +118,33 @@ docker info
 
 ## 方法2. 使用国内docker的镜像
 
-我找了几个源测试，都不好用，最好还是科学上网吧。
-
-(1) 创建或编辑 Docker 配置文件 /etc/docker/daemon.json：
-
+(1) 创建或修改 /etc/docker/daemon.json：
 ```bash
-sudo vim /etc/docker/daemon.json
-```
-添加镜像源配置（如果文件为空，添加以下内容）：
 
-```json
+sudo mkdir -p /etc/docker
+sudo tee /etc/docker/daemon.json <<-'EOF'
 {
-  "registry-mirrors": ["https://download.docker.com"]
+    "registry-mirrors": [
+        "https://dockerproxy.com",
+        "https://docker.mirrors.ustc.edu.cn",
+        "https://docker.nju.edu.cn"
+    ]
 }
+EOF
 ```
 
-其他镜像
-Docker 官方的中国镜像：https://download.docker.com
-Docker 中国社区镜像：https://hub-mirror.c.163.com
-还有比如中科大/阿里云之类的。
-
-(2) 重启 Docker 服务：
+(2) 重启 Docker 服务
 
 ```bash
+sudo systemctl daemon-reload
 sudo systemctl restart docker
 ```
-(3)重新运行 Docker 测试容器：
+
+(3) 重新运行 Docker 测试容器
 
 ```bash
 sudo docker run hello-world
 ```
+
+(4) 参考
+ https://gist.github.com/y0ngb1n/7e8f16af3242c7815e7ca2f0833d3ea6
