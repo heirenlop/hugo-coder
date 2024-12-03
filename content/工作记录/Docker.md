@@ -148,3 +148,38 @@ sudo docker run hello-world
 
 (4) 参考
  https://gist.github.com/y0ngb1n/7e8f16af3242c7815e7ca2f0833d3ea6
+
+ # 3. 修改镜像存储路径
+
+(1) 查看当前存储路径以及存储空间
+```bash
+sudo docker info   # 查看docker数据存储路径，默认为Docker Root Dir:/var/lib/docker
+sudo docker system df # 查看docker数据占用的存储空间，-v参数是详细列出
+```
+(2) 修改/etc/docker/daemon.json 文件
+```bash
+sudo vim /etc/docker/daemon.json  # 新建配置文件，在其中输入以下信息
+ 
+{
+"data-root": "/data/docker",  # 配置docker数据路径
+"registry-mirrors": ["http://hub-mirror.c.163.com"]  # 配置国内源[可选]
+}
+```
+(3) 将原文件拷贝到新目录下
+```bash
+# 将原来docker中存储的数据copy到新的存储目录下
+sudo cp -r /var/lib/docker /data/docker
+```
+(4) 重启docker服务
+```bash
+sudo systemctl restart docker
+ 
+# 查看image信息
+docker images
+ 
+# 可以将之前的目录中数据删除
+rm -rf /var/lib/docker
+```
+
+(5) 参考
+https://blog.csdn.net/weixin_43145427/article/details/123770971
