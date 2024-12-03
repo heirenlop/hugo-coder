@@ -165,6 +165,20 @@ sudo vim /etc/docker/daemon.json  # 新建配置文件，在其中输入以下�
 "registry-mirrors": ["http://hub-mirror.c.163.com"]  # 配置国内源[可选]
 }
 ```
+----------------
+2024-12-03更新
+可用镜像源：
+```bash
+"https://hub.geekery.cn",
+"https://hub.littlediary.cn",
+"https://docker.rainbond.cc",
+"https://docker.unsee.tech",
+"https://docker.m.daocloud.io",
+"https://hub.crdz.gq",
+"https://docker.nastool.de"
+```
+-----------------
+
 (3) 将原文件拷贝到新目录下
 ```bash
 # 将原来docker中存储的数据copy到新的存储目录下
@@ -183,4 +197,4 @@ rm -rf /var/lib/docker
 ```
 
 (5) 参考
-https://blog.csdn.net/weixin_43145427/article/details/123770971
+https://www.coderjia.cn/archives/dba3f94c-a021-468a-8ac6-e840f85867ea
