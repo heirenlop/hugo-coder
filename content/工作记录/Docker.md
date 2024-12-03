@@ -106,9 +106,11 @@ docker info
 ```
 这将显示有关 Docker 系统的详细信息，包括存储驱动、网络设置等。
 
-# 2. Docker 镜像加速问题
+# 2. 墙问题
 
-因为墙的原因，在docker pull 镜像的时候会很慢。
+因为墙的原因，在docker pull镜像的时候会很慢，或者说根本pull不下来，我ping的结果是丢包率100%。
+
+![ping](/images/work-record/ping.png "丢包率")
 
 ## 方法1. 科学上网
 
