@@ -135,7 +135,8 @@ sudo vim /etc/docker/daemon.json
 
 其他镜像
 Docker 官方的中国镜像：https://download.docker.com
-或者是 Docker 中国社区镜像：https://hub-mirror.c.163.com
+Docker 中国社区镜像：https://hub-mirror.c.163.com
+还有比如中科大/阿里云之类的。
 
 (2) 重启 Docker 服务：
 
