@@ -118,6 +118,8 @@ docker info
 
 ## 方法2. 使用国内docker的镜像
 
+我找了几个源测试，都不好用，最好还是科学上网吧。
+
 (1) 创建或编辑 Docker 配置文件 /etc/docker/daemon.json：
 
 ```bash
