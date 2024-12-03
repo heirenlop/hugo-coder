@@ -172,6 +172,7 @@ sudo cp -r /var/lib/docker /data/docker
 ```
 (4) 重启docker服务
 ```bash
+sudo systemctl daemon-reload
 sudo systemctl restart docker
  
 # 查看image信息

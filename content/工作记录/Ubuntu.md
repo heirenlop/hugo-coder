@@ -19,13 +19,19 @@ https://blog.csdn.net/qq_41833455/article/details/117882535
 
 1. 查看通信以及丢包率
     ```bash
-    ping baidu.com #ip地址
+    ping #ip地址
     ```
 
 2. 查看磁盘空间
     ```bash
-    df -h /home #目录
+    df -h #目录
     ```
+
+3. 文件夹赋权限
+    ```bash
+    sudo chmod -R 777 #文件夹路径
+    ```
+
 # 三. terminator快捷键
 ```bash
 //第一部份：关于在同一个标签内的操作
