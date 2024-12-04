@@ -29,21 +29,22 @@ git branch -D xxx
 ```
 
 # 3. 回退版本
-回退暂存区某个文件到指定版本 
-```python
-git reset 版本号
+(1) 整个分支回退到指定版本 
+```bash
+git reset --hard 版本号
 ```
-回退后想查看目标分支之后的版本号
-```python
-git reflog
+(2)回退后强制上传回退版本
+a. 命令行推送
+```bash
+git push origin xxx -force #xxx为分支名，如git push origin main -force
 ```
-回退后强制上传回退版本
-```python
-git push origin xxx -f #xxx为需要提交的版本号
-```
-以上回退流程工作区不会发生变动，若需要回退工作区内容，则
-```python
-git checkout .
+b. 界面推送
+在vscode的git插件中直接点同步，即可推送到远程仓库
+
+
+(3) 指定文件回退到某版本
+```bash
+git checkout 版本号 -- 文件路径 #git checkout abc1234 -- file.txt
 ```
 
 # 4. 清空本地修改
