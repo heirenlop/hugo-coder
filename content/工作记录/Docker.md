@@ -204,6 +204,7 @@ https://blog.csdn.net/weixin_43145427/article/details/123770971
 # 4. 删除镜像和删除容器
 
 1. 删除镜像：
+   
    (1) 查看当前所有镜像
    ```bash
    docker images
@@ -217,6 +218,7 @@ https://blog.csdn.net/weixin_43145427/article/details/123770971
    docker rmi -f 镜像名/镜像号
    ```
 2. 删除容器：
+   
    (1) 查看当前所有容器
    ```bash
    docker ps -a
@@ -232,4 +234,36 @@ https://blog.csdn.net/weixin_43145427/article/details/123770971
    (4) 强制删除容器
    ```bash
    sudo docker rm -f 容器名/容器号
+   ```
+
+# 5. 容器操作
+
+1. 启动容器：
+   
+  (1) 查看当前所有容器
+  ```bash
+  docker ps -a
+   ```
+   (2) 启动容器
+   ```bash
+   sudo docker start 容器名/容器号
+   ```
+   (3) 进入容器终端
+   ```bash
+   sudo docker exec -it 容器名/容器号 bash
+   ```
+   
+2. 停止容器：
+   
+   (1) 查看当前所有容器
+   ```bash
+   docker ps -a
+   ```
+   (2) 停止容器
+   ```bash
+   sudo docker stop 容器名/容器号
+   ```
+   (3) 强制停止容器
+   ```bash
+   sudo docker stop -f 容器名/容器号
    ```
