@@ -32,6 +32,21 @@ https://blog.csdn.net/qq_41833455/article/details/117882535
     sudo chmod -R 777 #文件夹路径
     ```
 
+4. 查看usb信息
+   (1) 查看usb设备
+   ```bash
+   lsusb
+   ```
+   (2) 查看usb设备详细信息
+   ```bash
+   lsusb -v
+   ```
+   (3) 查看硬件设备内核信息，用来调试
+   ```bash
+   dmesg | grep -i usb
+   ```
+
+
 # 三. terminator快捷键
 ```bash
 //第一部份：关于在同一个标签内的操作
@@ -75,3 +90,7 @@ Super+Shift+T                   //解除绑定
 Ctrl+Shift+I                    //打开一个窗口，新窗口与原来的窗口使用同一个进程
 Super+i                         //打开一个新窗口，新窗口与原来的窗口使用不同的进程
 ```
+
+# 四. USB设备挂载
+
+一般来讲USB设备挂在到USB2.0的接口，不要挂载到USB3.0接口。USB 2.0端口的兼容性通常更好，电力需求更稳定，因此可能会提供更好的连接稳定性。比如随身wifi需要挂载到USB2.0接口。
