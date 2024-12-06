@@ -267,6 +267,10 @@ https://blog.csdn.net/weixin_43145427/article/details/123770971
    sudo docker stop -f 容器名/容器号
    ```
 
-# 六. Nvidia驱动配套
+# 六. Nvidia驱动工具
 
 见Nvidia中第二部分nvidia-container-toolkit安装。
+
+# 七. 自动补全工具
+
+见Ubuntu中第五部分Docker自动补全。
