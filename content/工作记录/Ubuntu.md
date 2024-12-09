@@ -45,9 +45,18 @@ https://blog.csdn.net/qq_41833455/article/details/117882535
    ```bash
    dmesg | grep -i usb
    ```
+5. 查找历史指令并高亮显示
+   ```bash
+   history | grep -i <keyword>
+   ```
+# 三. terminator
+1. history显示指令时间
+```bash
+echo "export HISTTIMEFORMAT='%F %T '" >> ~/.bashrc
+source ~/.bashrc
+```
 
-
-# 三. terminator快捷键
+2. 快捷键
 ```bash
 //第一部份：关于在同一个标签内的操作
 Alt+Up                          //移动到上面的终端

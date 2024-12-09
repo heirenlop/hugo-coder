@@ -30,32 +30,46 @@ https://blog.csdn.net/czjl6886/article/details/122129576
 ## 3. Git->Linux
 
 (1) 安装git
-```python
+```bash
 sudo apt update
 sudo apt install git
 ```
 (2) 验证
-```python
+```bash
 git --version
 ```
 (3) 配置github账户
-```python
+```bash
 git config --global user.name "Your Name"
 git config --global user.email "youremail@example.com"
 ```
 (4) 生成SSH密钥，如果有密钥直接复制过来就行，没有的话如下生成
-```python
+```bash
 ssh-keygen -t rsa -b 4096 -C "youremail@example.com"
 ```
 (5) 查看密钥内容
-```python
+```bash
 cat ~/.ssh/id_rsa.pub
 ```
 (6) github网页设置密钥
 登录到 GitHub，然后进入 Settings > SSH and GPG keys 页面，点击 New SSH key。
 粘贴复制的公钥，并为它取个名字，然后保存。
 (7) 测试SSH链接
-```python
+```bash
 ssh -T git@github.com
 ```
 如果成功，会显示类似于 Hi username! You've successfully authenticated, but GitHub does not provide shell access. 的消息。
+
+# 三：快捷键
+1. 显示右侧边栏
+   ```bash 
+   ctrl+alt+b
+   ```
+2. 显示左侧边栏
+   ```bash
+   ctrl+b
+   ```
+3. 显示底部边栏
+   ```bash
+   ctrl+j
+   ```
