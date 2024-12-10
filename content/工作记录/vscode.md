@@ -3,9 +3,9 @@ title: "Vscode"
 date: 2024-10-24
 draft: false
 ---
-# 一：设置相关 
+# 一：设置相关
 
-## 1. vscode同步多电脑
+1. vscode同步多电脑
 
 (1) 页面左下角设置同步打开
 
@@ -17,59 +17,91 @@ draft: false
 
 # 二：插件相关 #
 
-## 1.ssh
+1. ssh
 
 (1) ssh到ubuntu，以及ubuntu需要的设置
-https://blog.csdn.net/zsyyugong/article/details/134438071
+<https://blog.csdn.net/zsyyugong/article/details/134438071>
 
+2. Git->Windiows
 
-## 2. Git->Windiows
+<https://blog.csdn.net/czjl6886/article/details/122129576>
 
-https://blog.csdn.net/czjl6886/article/details/122129576
-
-## 3. Git->Linux
+3. Git->Linux
 
 (1) 安装git
+
 ```bash
 sudo apt update
 sudo apt install git
 ```
+
 (2) 验证
+
 ```bash
 git --version
 ```
+
 (3) 配置github账户
+
 ```bash
 git config --global user.name "Your Name"
 git config --global user.email "youremail@example.com"
 ```
+
 (4) 生成SSH密钥，如果有密钥直接复制过来就行，没有的话如下生成
+
 ```bash
 ssh-keygen -t rsa -b 4096 -C "youremail@example.com"
 ```
+
 (5) 查看密钥内容
+
 ```bash
 cat ~/.ssh/id_rsa.pub
 ```
+
 (6) github网页设置密钥
 登录到 GitHub，然后进入 Settings > SSH and GPG keys 页面，点击 New SSH key。
 粘贴复制的公钥，并为它取个名字，然后保存。
 (7) 测试SSH链接
+
 ```bash
 ssh -T git@github.com
 ```
+
 如果成功，会显示类似于 Hi username! You've successfully authenticated, but GitHub does not provide shell access. 的消息。
 
+4. Docker-> dev container
+    (1) 作用
+
+    在容器化环境中构建、配置和管理开发环境。
+
+    (2) docker内构建按vscode环境流程
+    a. ctrl+shift+p，选择dev container: open folder in container;
+    b. 选择对应文件夹;
+    c. 配置dev container，有dockerfile直接根据dockerfile，没有则根据vscode配置文件生成;
+    d. 配置完成后，点击rebuild container，构建开发容器;
+    e. 构建完成，进入新开发容器的scode界面。
+
+    (3) 问题：
+    a. 主机内新增某文件，vscode的界面内同步了，但vscode的终端内未同步，则Ctrl+Shift+P后rebuild容器。但是rebuild后之前容器内所有安装的软件都没了？
+
 # 三：快捷键
+
 1. 显示右侧边栏
-   ```bash 
+
+   ```bash
    ctrl+alt+b
    ```
+
 2. 显示左侧边栏
+
    ```bash
    ctrl+b
    ```
+
 3. 显示底部边栏
+
    ```bash
    ctrl+j
    ```
