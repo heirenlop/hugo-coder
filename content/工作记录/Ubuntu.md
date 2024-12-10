@@ -45,10 +45,25 @@ https://blog.csdn.net/qq_41833455/article/details/117882535
    ```bash
    dmesg | grep -i usb
    ```
+
 5. 查找历史指令并高亮显示
    ```bash
    history | grep -i <keyword>
    ```
+
+6. 查找文件
+   ```bash
+   locate filename
+   ```
+   忽略filename大小写
+   ```bash
+   locate -i filename
+   ```
+7. 查看文件大小
+   ```bash
+   ls -lh filename
+   ```
+   
 # 三. terminator
 1. history显示指令时间
 ```bash
@@ -56,7 +71,7 @@ echo "export HISTTIMEFORMAT='%F %T '" >> ~/.bashrc
 source ~/.bashrc
 ```
 
-2. 快捷键
+1. 快捷键
 ```bash
 //第一部份：关于在同一个标签内的操作
 Alt+Up                          //移动到上面的终端

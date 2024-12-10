@@ -48,13 +48,21 @@ git checkout 版本号 -- 文件路径 #git checkout abc1234 -- file.txt
 ```
 
 # 4. 清空本地修改
-清空本地所有修改
+(1)已跟踪文件
+
+清空所有已跟踪文件的修改
 ```python
 git checkout .
 ```
 清空本地某个文件修改
 ```python
 git checkout xxx #xxx为某文件
+```
+(2)未跟踪文件
+
+清空所有未跟踪文件/目录的修改
+```bash
+git clean -fd #f为未跟踪的文件，d为未跟踪的目录
 ```
 
 # 5. 撤销与修改
