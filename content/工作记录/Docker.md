@@ -122,7 +122,7 @@ docker info
 
 这将显示有关 Docker 系统的详细信息，包括存储驱动、网络设置等。
 
-# 二. 镜像加速
+# 二. 下载镜像加速
 
 因为墙的原因，在docker pull镜像的时候会很慢，或者说根本pull不下来，我ping的结果是丢包率100%。
 
@@ -305,9 +305,67 @@ docker rename 旧容器名 新容器名
 docker cp 宿主机文件路径 容器id:容器内路径 # docker cp /home/heirenlop/workspace/Dataset 356d3fe40061:/workspace/
 ```
 
-# 七. Nvidia驱动工具
+# 七. Dockerfile写法
 
-见Nvidia中第二部分nvidia-container-toolkit安装。
+以SUMA++中dockerfile为例
+```bash
+# CUDA 10.1.243, cuDNN 7.6.2, TensorRT 5.1.5
+# FROM nvcr.io/nvidia/tensorrt:19.08-py3
+
+# CUDA 11.3、cuDNN 8.2.1 和 TensorRT 8.2.1。
+FROM nvcr.io/nvidia/tensorrt:21.11-py3 
+
+ARG DEBIAN_FRONTEND=noninteractive
+
+ENV NVIDIA_VISIBLE_DEVICES \
+    ${NVIDIA_VISIBLE_DEVICES:-all}
+ENV NVIDIA_DRIVER_CAPABILITIES \
+    ${NVIDIA_DRIVER_CAPABILITIES:+$NVIDIA_DRIVER_CAPABILITIES,}graphics
+    
+# Dependencies
+RUN apt-get -y update &&\
+    apt-get -y upgrade &&\
+    apt-get install -y apt-utils build-essential cmake curl libgtest-dev libeigen3-dev libboost-all-dev qtbase5-dev libglew-dev qt5-default git libyaml-cpp-dev libopencv-dev vim
+
+RUN apt-get -y install software-properties-common &&\
+    add-apt-repository ppa:borglab/gtsam-release-4.0 &&\
+    apt-get -y update &&\
+    apt-get install -y libgtsam-dev libgtsam-unstable-dev
+
+# ROS melodic        
+RUN apt-get install -y lsb-release &&\
+    sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list' &&\
+    curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | apt-key add - &&\
+    apt-get update -y &&\
+    apt install -y ros-melodic-desktop-full
+RUN apt-get install -y python3-catkin-pkg python3-wstool python3-rosdep ninja-build stow python3-rosinstall python3-rosinstall-generator
+RUN rosdep init && rosdep update
+    
+RUN python3 -m pip install --upgrade pip
+RUN pip install catkin_tools catkin_tools_fetch empy trollius numpy rosinstall_generator
+
+# RangeNetLib & Suma++
+RUN mkdir -p /catkin_ws/src
+WORKDIR /catkin_ws/src
+RUN git clone https://github.com/ros/catkin.git &&\
+    git clone https://github.com/PRBonn/rangenet_lib.git
+RUN sed -i 's/builder->setFp16Mode(true)/builder->setFp16Mode(false)/g' /catkin_ws/src/rangenet_lib/src/netTensorRT.cpp
+RUN cd ../ && catkin init &&\
+    catkin build rangenet_lib
+RUN git clone https://github.com/PRBonn/semantic_suma.git &&\
+    sed -i 's/find_package(Boost REQUIRED COMPONENTS filesystem system)/find_package(Boost 1.65.1 REQUIRED COMPONENTS filesystem system serialization thread date_time regex timer chrono)/g' /catkin_ws/src/semantic_suma/CMakeLists.txt &&\
+    catkin init &&\
+    catkin deps fetch &&\
+    cd glow && git checkout e66d7f855514baed8dca0d1b82d7a51151c9eef3 && cd ../ &&\
+    catkin build --save-config -i --cmake-args -DCMAKE_BUILD_TYPE=Release -DOPENGL_VERSION=430 -DENABLE_NVIDIA_EXT=YES
+    
+# Download model
+WORKDIR /catkin_ws/src/semantic_suma
+RUN wget https://www.ipb.uni-bonn.de/html/projects/semantic_suma/darknet53.tar.gz &&\
+    tar -xvf darknet53.tar.gz
+    
+WORKDIR /catkin_ws/src
+```
 
 # 八. Docker访问X11服务器
 
