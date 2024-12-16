@@ -158,8 +158,30 @@ git pull <remote> <branch>
 git pull origin main
 ```
 
-# 13. Todo
-todo
+# 13. 新建仓
+
+(1) 个人主页New repository
+(2) 本地创建新仓，以abc为例
+```bash
+cd abc
+git init
+```
+(3) 添加文件，以README为例
+```bash 
+git status #查看状态
+git add README.md
+git status #查看状态
+```
+(4) 提交
+```bash
+git commit -m "first commit"
+```
+(5) 推送
+```bash
+git remote add origin git@github.com:heirenlop/abc.git #链接远程仓
+git remote -v #查看状态
+git push -u origin master #推送
+```
 
 # 备注：
 ![没图？](/images/work-record/github.png "github逻辑图")
