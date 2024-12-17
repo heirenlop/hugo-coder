@@ -17,5 +17,5 @@ Docker：<https://github.com/ub-cavas/docker-droid-slam>
 # 三. 测试
 
    显存不够
-   原因：4060Ti显存8G < 11G
+   原因：4060Ti显存8G < 要求的11G
    结果：Global BA崩溃
