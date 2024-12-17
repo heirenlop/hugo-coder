@@ -173,3 +173,15 @@ sudo apt-get install -y nvidia-container-toolkit
 ```bash
 sudo systemctl restart docker
 ```
+
+# 三. GPU功率设置
+
+限制功率
+```bash
+nvidia-smi -i 0 -pl 150 #-i 0表示第0块gpu，-pl 150表示功耗限制在150W
+```
+
+恢复功率
+```bash
+nvidia-smi -i 0 -pl 0
+```

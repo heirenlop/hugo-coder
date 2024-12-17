@@ -142,4 +142,12 @@ sudo apt install bash-completion
 echo 'source /usr/share/bash-completion/completions/docker' >> ~/.bashrc
 source ~/.bashrc
 ```
-   
+
+# 六. 取消升级提示
+```bash
+sudo vim /etc/update-manager/release-upgrades
+```
+修改为：
+```bash
+Prompt=never
+```
