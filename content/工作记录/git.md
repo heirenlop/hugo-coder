@@ -182,6 +182,12 @@ git remote add origin git@github.com:heirenlop/abc.git #链接远程仓
 git remote -v #查看状态
 git push -u origin master #推送
 ```
+(6) 修改remote链接
+```bash
+git remote -v  #查看状态
+git remote set-url origin git@github.com:heirenlop/abc.git  #x修改为新的链接
+git remote -v  #查看状态
+```
 
 # 备注：
 ![没图？](/images/work-record/github.png "github逻辑图")
