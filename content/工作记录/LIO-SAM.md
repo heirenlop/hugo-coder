@@ -12,14 +12,24 @@ draft: false
 
 # 二. 流程
 
-1. 官方的bag分多种，目前我只下载了campus和park,根据运行的bag不同，做如下配置文件的修改
+1. 官方bag为velody雷达，修改ros2分支中/config/params.yaml中sensor settings
+```yaml
+# Sensor Settings
+    sensor: velodyne                               # lidar sensor type, either 'velodyne', 'ouster' or 'livox'
+    N_SCAN: 16                                   # number of lidar channels (i.e., Velodyne/Ouster: 16, 32, 64, 128, Livox Horizon: 6)
+    Horizon_SCAN: 1800                            # lidar horizontal resolution (Velodyne:1800, Ouster:512,1024,2048, Livox Horizon: 4000)
+    downsampleRate: 1                            # default: 1. Downsample your data if too many
+```
 
-(1) 默认配置
+2. 官方bag分多种，目前我只下载了campus和park,根据运行的bag不同，，修改ros2分支中/config/params.yaml中topics和IMU Settings
 
-config/params.yaml内容保持默认
+(1) park_dataset
 
 ```yaml
-imuTopic: "imu_raw"                         # IMU data
+#Topics
+pointCloudTopic: "/points_raw"                   # Point cloud data
+imuTopic: "imu_raw"                # IMU data
+#IMU Settings
 extrinsicRot:    [-1.0,  0.0,  0.0,
                        0.0,  1.0,  0.0,
                         0.0,  0.0, -1.0 ]
@@ -28,12 +38,13 @@ extrinsicRPY: [ 0.0,  1.0,  0.0,
                      0.0,  0.0,  1.0 ]
 ```
 
-(2) 修改配置
-
-config/params.yaml内容修改如下：
+(2) campus_dataset
 
 ```yaml
+#Topics
+pointCloudTopic: "/points_raw"                   # Point cloud data
 imuTopic: "/imu_correct"                        # IMU data
+#IMU Settings
 extrinsicRot:    [1.0,  0.0,  0.0,
                        0.0,  1.0,  0.0,
                        0.0,  0.0, 1.0 ]
