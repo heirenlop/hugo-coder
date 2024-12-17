@@ -299,11 +299,16 @@ rm -rf /var/lib/docker
 docker rename 旧容器名 新容器名
 ```
 
-4. 复制宿主机文件到容器中
-
+4. 复制
+复制宿主机文件到容器中
 ```bash
 docker cp 宿主机文件路径 容器id:容器内路径 # docker cp /home/heirenlop/workspace/Dataset 356d3fe40061:/workspace/
 ```
+复制容器文件到宿主机
+```bash
+docker cp 容器id:容器内文件路径 宿主机文件路径 #docker cp 18f7b9c8b3ab:/root/park_dataset_ros2 ./
+```
+
 
 # 七. Dockerfile写法
 
