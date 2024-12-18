@@ -31,6 +31,10 @@ https://blog.csdn.net/qq_41833455/article/details/117882535
     ```bash
     sudo chmod -R 777 #文件夹路径
     ```
+    修改文件夹的拥有者
+    ```bash
+    sudo chown -R <user>:<user> #文件路径,如sudo chown -R heirenlop:heirenlop ./workspace
+    ```
 
 4. 查看usb信息
    (1) 查看usb设备
