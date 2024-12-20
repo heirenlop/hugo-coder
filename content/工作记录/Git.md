@@ -188,6 +188,14 @@ git remote -v  #查看状态
 git remote set-url origin git@github.com:heirenlop/abc.git  #x修改为新的链接
 git remote -v  #查看状态
 ```
-
+# 14. 拉取submodule
+(1) clone时直接拉取submodule
+```bash
+git clone --recursive <repository_url>
+```
+(2) clone后拉取submodule
+```bash
+git submodule update --init --recursive
+```
 # 备注：
 ![没图？](/images/work-record/github.png "github逻辑图")
